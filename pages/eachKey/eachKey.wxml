@@ -1,0 +1,13 @@
+<!--pages/eachKey/eachKey.wxml-->
+<view>checkbox</view>
+
+<view wx:for="{{nums}}" wx:key="*this">
+  <checkbox></checkbox>
+</view>
+
+<button bindtap="addItemToNums">向nums中添加数据</button>
+
+<view>---each person---</view>
+<view wx:for="{{xiyouPerson}}" wx:key="{{item._id}}">
+  {{index}}--{{item.name}}--{{item.age}}
+</view>

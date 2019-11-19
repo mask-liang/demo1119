@@ -1,0 +1,15 @@
+<!--pages/each/each.wxml-->
+
+<view>循环-----</view>
+<view wx:for="{{nums}}">
+  {{index}}--{{item}}
+</view>
+
+<view>---object---</view>
+
+<view wx:for="{{person}}">
+  {{index}}--{{item}}
+</view>
+
+<view>---指定索引和当前项---</view>
+<view wx:for="{{person}}" wx:for-index="key" wx:for-item="value">{{key}}--{{value}} aaa</view>
